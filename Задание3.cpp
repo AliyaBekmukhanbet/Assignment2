@@ -77,9 +77,7 @@ void testSort(int size) {
 }
 
 int main() {
-    omp_set_num_threads(4);
     cout << "Параллельная сортировка выбором с OpenMP\n";
-    cout << "Потоки: " << omp_get_max_threads() << "\n";
 
     testSort(1000);
     testSort(10000);
